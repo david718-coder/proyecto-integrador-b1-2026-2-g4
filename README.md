@@ -12,9 +12,7 @@ Proyecto: Evidencia 2 — Desarrollo Web con Vaadin
 Institución: Cesde
 Autor: Luis David Romero Chaverra
        David Colorado Gomez
-       Thamara Laritza
-
-Estado: Anteproyecto
+       Thamara Taborda
 
 ---
 
@@ -259,7 +257,7 @@ Evidencia: Desarrollo Web con Vaadin
 
 Integrante| Responsabilidad
 Luis David Romero Chaverra| Interfaz principal y documentacion
-[Thamara Laritza]| [Registro y administracion de mascotas]
+[Thamara Taborda]| [Registro y administracion de mascotas]
 [David Colorado]| [Busqueda, base de datos y geolocalizacion]
 
 13. Licencia

@@ -72,7 +72,7 @@ flowchart TD
 
 ## 3. Modelo de datos
 
-![Diagrama MER de Mascotas Bello](docs/MER.png)
+![Diagrama MER de Mascotas Bello](docs/MER.img)
 
 Relaciones principales:
 

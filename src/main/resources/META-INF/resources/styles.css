@@ -1,1 +1,20 @@
-/* Add your styles here */
+html {
+  /* Color principal: botones primarios, enlaces, foco, selección */
+  --lumo-primary-color: #124B37;
+  --lumo-primary-text-color: #124B37;
+  --lumo-primary-color-50pct: rgba(18, 75, 55, 0.5);
+  --lumo-primary-color-10pct: rgba(18, 75, 55, 0.1);
+
+  /* Texto y bordes redondeados como en la página principal */
+  --lumo-body-text-color: #24352D;
+  --lumo-header-text-color: #24352D;
+  --lumo-border-radius-m: 8px;
+}
+
+/* Barra superior de las pantallas de administración */
+vaadin-app-layout::part(navbar) { background: #124B37; }
+vaadin-app-layout h1 { color: white; }
+vaadin-drawer-toggle { color: white; }
+
+/* Títulos de cada pantalla */
+vaadin-app-layout h2 { color: #124B37; }

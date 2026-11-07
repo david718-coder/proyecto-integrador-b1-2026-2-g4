@@ -1,0 +1,4 @@
+#  ./mvnw spring-boot:run
+db.url=jdbc:postgresql://TU-HOST.neon.tech/neondb?sslmode=require
+db.user=TU_USUARIO
+db.password=TU_CONTRASENA

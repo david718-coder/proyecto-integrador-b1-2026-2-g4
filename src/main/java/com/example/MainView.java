@@ -1,5 +1,6 @@
 package com.example;
 
+import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.html.Anchor;
 import com.vaadin.flow.component.html.Div;
@@ -9,7 +10,6 @@ import com.vaadin.flow.component.html.H2;
 import com.vaadin.flow.component.html.H3;
 import com.vaadin.flow.component.html.Paragraph;
 import com.vaadin.flow.component.html.Span;
-import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.Route;
@@ -17,7 +17,7 @@ import com.vaadin.flow.router.Route;
 @Route("")
 public class MainView extends VerticalLayout {
 
-    private final String verde = "#176B4D";
+    private final String verde = "#124B37";
     private final String verdeClaro = "#E8F5EE";
     private final String texto = "#24352D";
 
@@ -77,7 +77,8 @@ public class MainView extends VerticalLayout {
                 crearEnlace("#perdidas", "Perdidas"),
                 crearEnlace("#encontradas", "Encontradas"),
                 crearEnlace("#adopcion", "Adopción"),
-                crearEnlace("#contacto", "Contacto")
+                crearEnlace("#contacto", "Contacto"),
+                crearEnlace("usuarios", "Administración")
         );
 
         encabezado.add(marca, menu);
@@ -146,10 +147,7 @@ public class MainView extends VerticalLayout {
                 .set("font-weight", "bold");
 
         reportar.addClickListener(event ->
-                Notification.show(
-                        "El formulario de reportes se integrará próximamente."
-                )
-        );
+                UI.getCurrent().navigate("reportes"));
 
         Button explorar = new Button("Explorar mascotas");
         explorar.getStyle()
@@ -161,10 +159,7 @@ public class MainView extends VerticalLayout {
                 .set("font-weight", "bold");
 
         explorar.addClickListener(event ->
-                Notification.show(
-                        "Próximamente podrás explorar los reportes."
-                )
-        );
+                UI.getCurrent().navigate("mascotas"));
 
         HorizontalLayout botones = new HorizontalLayout(
                 reportar, explorar);
@@ -288,11 +283,7 @@ public class MainView extends VerticalLayout {
                 .set("border-radius", "7px");
 
         boton.addClickListener(event ->
-                Notification.show(
-                        "La sección de " + titulo
-                        + " se conectará próximamente."
-                )
-        );
+                UI.getCurrent().navigate("reportes"));
 
         tarjeta.add(icono, encabezado, detalle, boton);
         return tarjeta;

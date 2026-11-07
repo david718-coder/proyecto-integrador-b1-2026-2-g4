@@ -12,3 +12,6 @@
 node_modules/
 src/main/frontend/generated/
 vite.generated.ts
+
+# Credenciales de la base de datos (nunca subir)
+src/main/resources/db.properties

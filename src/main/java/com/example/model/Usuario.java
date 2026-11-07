@@ -13,9 +13,6 @@ public class Usuario {
     private String estado; // 'activo', 'inactivo', 'baneado'
     private LocalDateTime fechaRegistro;
 
-    // ===================
-    // Constructor completo
-    // ===================
     public Usuario(Long id, String nombre, String apellido, String email, String telefono,
             String direccion, String rol, String estado, LocalDateTime fechaRegistro) {
         this.id = id;
